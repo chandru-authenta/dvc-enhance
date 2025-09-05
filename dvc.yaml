@@ -1,0 +1,16 @@
+stages:
+  train:
+    cmd: source .dvcenv/bin/activate && python3 train.py
+    deps:
+      - train.py
+      - data/train
+      - params.yaml
+    outs:
+      - model.pth
+    metrics:
+      - metrics.json
+    params:
+      - epochs
+      - batch_size
+      - learning_rate
+      - img_size

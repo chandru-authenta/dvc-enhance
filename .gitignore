@@ -1,0 +1,9 @@
+model.pth
+.dvcenv
+__pycache__/
+.DS_Store
+data/train/
+.dvc/cache/
+.dvc/tmp/
+.vscode/
+.ipynb_checkpoints/
