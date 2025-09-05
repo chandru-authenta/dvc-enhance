@@ -5,9 +5,9 @@ stages:
     deps:
     - path: data/train
       hash: md5
-      md5: 26be727e5e1c05b40043f302691698cf.dir
-      size: 221545151
-      nfiles: 2004
+      md5: 19ff0eccafeddcfab38ab727d7bec29a.dir
+      size: 225792495
+      nfiles: 2041
     - path: params.yaml
       hash: md5
       md5: 151fd10638db68217240532f6bb82929
@@ -25,9 +25,9 @@ stages:
     outs:
     - path: metrics.json
       hash: md5
-      md5: 1bcb6fd9b574cf2c19165591ab10bf8d
+      md5: 12b80a36ff0a4702ae27f37e49a75d5e
       size: 59
     - path: model.pth
       hash: md5
-      md5: 730f3256b0e8072fb3b9f70a943f08f0
+      md5: 0f1e921b109275918a36b7fbe0677e85
       size: 44780939
