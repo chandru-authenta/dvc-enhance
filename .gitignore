@@ -1,5 +1,6 @@
 model.pth
 .dvcenv
+.dvcenv/*
 __pycache__/
 .DS_Store
 data/train/
