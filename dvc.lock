@@ -1,0 +1,33 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: source .dvcenv/bin/activate && python3 train.py
+    deps:
+    - path: data/train
+      hash: md5
+      md5: 26be727e5e1c05b40043f302691698cf.dir
+      size: 221545151
+      nfiles: 2004
+    - path: params.yaml
+      hash: md5
+      md5: 151fd10638db68217240532f6bb82929
+      size: 60
+    - path: train.py
+      hash: md5
+      md5: d1b3366f91636752555ee447cf28d04c
+      size: 2069
+    params:
+      params.yaml:
+        batch_size: 16
+        epochs: 5
+        img_size: 128
+        learning_rate: 0.001
+    outs:
+    - path: metrics.json
+      hash: md5
+      md5: 1bcb6fd9b574cf2c19165591ab10bf8d
+      size: 59
+    - path: model.pth
+      hash: md5
+      md5: 730f3256b0e8072fb3b9f70a943f08f0
+      size: 44780939
